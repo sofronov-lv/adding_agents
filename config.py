@@ -9,7 +9,7 @@ DATA_PSB = {
     "password": PASSWORD
 }
 
-PSB_URL = "https://api.lk.psb.services/agent/oauth2/token"
+PSB_URL = "https://api.lk.psb.services/agent/oauth2/token"  # https://lk.psb.services/auth/login
 ADD_PSB_URL = "https://api.lk.psb.services/agent/v1/rko/order"
 
-URALSIB_URL = "https://www.uralsib.ru/business/sotrudnichestvo/login"
+# URALSIB_URL = "https://www.uralsib.ru/business/sotrudnichestvo/login"
