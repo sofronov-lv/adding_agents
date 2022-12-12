@@ -18,7 +18,7 @@ def get_email(fio: str, inn: str) -> str:
 def get_clients():
     """Get a list of all clients from excel"""
     book = openpyxl.load_workbook(filename="client_list.xlsx")
-    sheet = book["первые 2 базы"]  # name of the page sheet
+    sheet = book["clients"]  # name of the page sheet
 
     psb_dict = {}
     for name_, inn_, phone_, psb_ in zip(sheet["A"], sheet["B"], sheet["C"], sheet["H"]):

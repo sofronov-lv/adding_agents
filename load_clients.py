@@ -1,4 +1,5 @@
 import json
+from time import sleep
 import requests
 
 from config import DATA_PSB, PSB_URL, ADD_PSB_URL
@@ -14,3 +15,4 @@ token = json_dict["access_token"]  # get a token for subsequent work
 clients = get_clients()
 for user_data in clients.values():
     session.post(ADD_PSB_URL, data=user_data, headers={"Authorization": f"Bearer {token}"})
+    sleep(4)
